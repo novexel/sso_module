@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://novexel.co.uk" target="_blank">
-  <img src="https://novexel.co.uk/logo.png" alt="Novexel Logo" width="220" onerror="this.src='https://raw.githubusercontent.com/novexel/SSO_Module/main/assets/banner.png'; this.onerror=null;" />
+  <img src="https://www.novexel.co.uk/lovable-uploads/fe6befc5-76e8-4465-95c0-e8ed93650005.png" alt="Novexel Logo" width="100" />
 </a>
 
 # @novexel/sso
