@@ -1,0 +1,85 @@
+{
+  "name": "@novexel/sso",
+  "version": "1.0.0",
+  "description": "Production-grade, zero-trust Microsoft Entra ID (Azure AD) and MSAL Single Sign-On (SSO) module for Node.js and React applications by Novexel.",
+  "author": "Novexel",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./server": {
+      "require": "./dist/server/index.js",
+      "types": "./dist/server/index.d.ts"
+    },
+    "./client": {
+      "require": "./dist/client/index.js",
+      "types": "./dist/client/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node tests/run-verifier.js",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "overrides": {
+    "qs": "^6.16.0"
+  },
+  "keywords": [
+    "sso",
+    "single-sign-on",
+    "microsoft-entra",
+    "azure-ad",
+    "msal",
+    "authentication",
+    "jwt",
+    "jwks",
+    "novexel",
+    "multi-tenant",
+    "zero-trust"
+  ],
+  "dependencies": {
+    "@azure/msal-browser": "^3.10.0",
+    "@azure/msal-react": "^2.0.12",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "express": "^4.18.3",
+    "jest": "^29.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "express": "^4.18.0 || ^5.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  }
+}
